@@ -1,0 +1,53 @@
+#root {
+  max-width: 100vh;
+  text-align: center;
+  overflow-x: none;
+  overflow-y: none;
+}
+
+.painel {
+    position: fixed;
+    top: 0px;
+    background-color: #f0f0f0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.dot {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 100%;
+}
+
+.count {
+    pointer-events: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    color: black;
+    z-index: 9999;
+    font-weight: bold;
+}
+
+.btns {
+    position: relative;
+    margin-top: 10px;
+    margin: 20px;
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 9999;
+}
+
+#btn-undo {
+    background-color: red;
+}
+
+#btn-redo {
+    background-color: green;
+}
